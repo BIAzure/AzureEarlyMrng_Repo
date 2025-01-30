@@ -1,5 +1,5 @@
 {
-	"name": "Blob_Blob_Pipeline",
+	"name": "Blob_Blob_Pipeline_BKP_live",
 	"properties": {
 		"activities": [
 			{
@@ -66,22 +66,6 @@
 				"dependsOn": [
 					{
 						"activity": "Blob Copy data Blob",
-						"dependencyConditions": [
-							"Succeeded"
-						]
-					}
-				],
-				"userProperties": [],
-				"typeProperties": {
-					"waitTimeInSeconds": 1
-				}
-			},
-			{
-				"name": "Wait1",
-				"type": "Wait",
-				"dependsOn": [
-					{
-						"activity": "SP",
 						"dependencyConditions": [
 							"Succeeded"
 						]
